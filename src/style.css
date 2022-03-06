@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url(Assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url(Assets/fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url(Assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: 'Dongle-Regular';
+  src: url(Assets/fonts/Dongle/Dongle-Regular.ttf);
+}
+@font-face {
+  font-family: 'Press-start';
+  src: url('Assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf');
+}
+* {
+  font-family: 'Ubuntu-Regular';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-color: rgb(97, 97, 97);
+  --dark-grey: rgb(75, 75, 75);
+  --red: rgb(199, 83, 83);
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+
+  overflow-x: auto;
+}
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media (max-width: 481px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media (max-width: 281px) {
+  html {
+    font-size: 15px;
+  }
+}

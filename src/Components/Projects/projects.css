@@ -1,0 +1,72 @@
+@import '../../style.css';
+.projects {
+  position: relative;
+  background-color: #1f1e1e;
+  min-height: auto;
+  padding: 0 0 3% 0;
+  z-index: 3;
+  padding-bottom: 6%;
+}
+.slider img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 5px solid rgb(228, 228, 228);
+  border-radius: 6px;
+}
+.slider {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  width: 60vw;
+}
+.slider h1,
+.slider h2 {
+  text-align: center;
+  padding: 7% 0 3% 0;
+  color: rgb(108, 146, 202);
+}
+.slider h2 {
+  color: rgb(241, 240, 240);
+  padding-top: 1%;
+  font-size: 1.3rem;
+}
+.project-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  bottom: -75%;
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3%;
+}
+.project-link img {
+  position: absolute;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+}
+.project-link p {
+  padding-top: 5%;
+}
+.slider div:hover .project-link {
+  bottom: -30%;
+}
+
+@media (max-width: 681px) {
+  .slider h1,
+  .slider h2 {
+    font-size: 22px;
+  }
+  .slider {
+    width: 86%;
+    padding-bottom: 30px;
+  }
+}

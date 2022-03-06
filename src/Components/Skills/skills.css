@@ -1,0 +1,80 @@
+@import url('../../style.css');
+.ball {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  z-index: -3;
+  opacity: 0.8;
+}
+.container {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+}
+.skills {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  max-height: 100vh;
+  max-width: 80vw;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* padding-top: 5%;
+  padding-bottom: 7%; */
+}
+.title {
+  padding: 0 5% 0 5%;
+}
+.title h1 {
+  text-align: center;
+  color: rgb(233, 74, 74);
+  margin: 20px 0 20px 0;
+}
+.title h4 {
+  text-align: center;
+  /* margin: 0 0 10px 0; */
+}
+.details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 4%;
+}
+.details div {
+  margin: 3% 0 1% 0;
+}
+section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.details span {
+  font-size: 0.8rem;
+  background-color: rgb(241, 240, 240);
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+}
+.details span:hover {
+  background-color: rgb(192, 189, 189);
+  cursor: default;
+}
+.details div h3 {
+  color: rgb(233, 74, 74);
+  margin-bottom: 5%;
+}
+
+@media (max-width: 681px) {
+  .skills {
+    padding: 0;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

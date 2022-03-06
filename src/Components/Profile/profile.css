@@ -1,0 +1,37 @@
+@import url('../../style.css');
+.profile {
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #feffff;
+}
+.profile div {
+  position: relative;
+  top: 10%;
+  padding-right: 8%;
+  color: var(--font-color);
+}
+.profile p {
+  font-size: 2.5rem;
+}
+.profile h1 {
+  color: var(--red);
+  font-size: 4rem;
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+.profile span {
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.7);
+  background-color: rgb(207, 205, 205);
+  color: var(--dark-grey);
+}
+video {
+  position: fixed;
+  opacity: 0.5;
+  min-width: 70%;
+  z-index: 0;
+}
+
+@media (max-width: 481px) {
+}

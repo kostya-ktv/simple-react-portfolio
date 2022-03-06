@@ -1,0 +1,117 @@
+@import url('../../style.css');
+.about {
+  position: relative;
+  background-color: rgb(46, 46, 46);
+  min-height: 60vh;
+  z-index: 3;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+.info {
+  flex: 2;
+  color: rgb(206, 206, 206);
+  padding-left: 15%;
+}
+.info p {
+  margin: 20px 0 20px 0;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.info h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 10%;
+}
+
+.sql {
+  font-family: 'Press-start';
+  color: rgb(212, 212, 212);
+  flex: 1;
+  font-size: 1.3rem;
+  line-height: 2;
+  align-self: center;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -10deg,
+    rgb(32, 35, 56) 50%,
+    rgb(62, 125, 177) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: absolute;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 120%;
+  /* margin-top: 12%; */
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.info a {
+  position: relative;
+  padding: 10px 40px 10px 40px;
+  font-size: 1.2rem;
+  background-color: rgb(52, 70, 172);
+  border: none;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+.info a {
+  position: relative;
+  border-radius: 20px;
+}
+.info a:hover {
+  cursor: pointer;
+  background-color: rgb(96, 114, 214);
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.download-cv {
+  text-decoration: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+@media (max-width: 681px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sql {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+  .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}

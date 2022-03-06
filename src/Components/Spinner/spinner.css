@@ -1,0 +1,13 @@
+@import url('../../style.css');
+
+.spinner {
+  background-color: rgb(212, 236, 250);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.spinner img {
+  position: relative;
+  top: 30%;
+}
